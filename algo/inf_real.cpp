@@ -1,5 +1,5 @@
 #include "other_function.h"
-#include "heuristic.h"
+#include "algo.h"
 #include "syds.h"
 #include<algorithm>
 #include<iostream>
@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
     //-    Command line arguments    -
     //--------------------------------
     int heur_type = stoi(argv[1]);
-    string network_type = argv[2]; 
+    string network_name = argv[2]; 
     string theta = argv[3]; 
     
     //-----------------------------------------------------------------
@@ -26,23 +26,9 @@ int main(int argc, char *argv[])
     //-----------------------------------------------------------------
     string network_file;
     string thresh_file;
-    if(network_type == "gnp")
-    {
-        network_file = "../networks/random/gnp/gnp_d_100_theta_" + theta + ".edges";
-        thresh_file = "../networks/random/gnp/gnp_d_100_theta_" + theta + "_threshold.txt";
-    }
 
-    else if(network_type == "power_law")
-    {
-        network_file = "../networks/random/power_law/pl_d_100_theta_" + theta + ".edges";
-        thresh_file = "../networks/random/power_law/pl_d_100_theta_" + theta + "_threshold.txt";
-    }
-
-    else
-    {
-        cerr<<"unknown network type"<<endl;
-        return -1;
-    }
+    network_file = "../networks/real/" + network_name + "/" + network_name + ".edges";
+    thresh_file = "../networks/real/" + network_name + "/" + network_name + "_theta_" + theta + "_thresh.txt";
 
     Syds S;
     S = construct_network(network_file, thresh_file);
