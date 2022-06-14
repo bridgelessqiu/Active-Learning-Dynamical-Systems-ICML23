@@ -57,9 +57,10 @@ Directory structure:
 - network_name: `gnp`, `power_law`
 - theta: `0`, `0.9`
 
-Example:
-    run the binary-search based algorithm on gnp network under theta = 0:
-    ./inf_synthetic 2 gnp 0
+### Example 3: run the binary-search based algorithm on gnp network under theta = 0
 
-    run the linear-search based algorithm on power-law network under theta = 0.9:
-    ./inf_synthetic 1 power_law 0.9
+`./inf_synthetic 2 gnp 0`
+
+### Example 4: run the linear-search based algorithm on power-law network under theta = 0.9
+
+`./inf_synthetic 1 power_law 0.9`
