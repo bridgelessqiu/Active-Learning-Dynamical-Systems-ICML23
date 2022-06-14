@@ -3,13 +3,12 @@
 Directory structure:
 
 **algo/**
-- contains all the code for the inference algorithm
+- the code for the inference algorithm
 
 **networks/**
 
-- contains the selected 
-    real networks: lastfm, gnutella, fb, astroph, deezer
-    random networks: gnp network and power-law network of size 1,000 and average degree of around 100. 
+- the selected real networks: lastfm, gnutella, fb, astroph, deezer
+- random networks: gnp network and power-law network of size 1,000 and average degree of around 100. 
 
 ## To Compile the code on Linux   
 
@@ -36,10 +35,9 @@ Directory structure:
 ## To run inference algorithms on real networks 
 
 `./inf_real heuristic_type network_name theta`
-
-      - heuristic_type:
-        1 - Linear-search based inference 
-        2 - Binary-search based inference 
+- heuristic_type:
+    1. Linear-search based inference 
+    2. Binary-search based inference 
     - network_name: lastfm, gnutella, fb, astroph, deezer
     -theta: 0.1, 0.9
 
