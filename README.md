@@ -3,16 +3,13 @@
 Directory structure:
 
 **algo/**
-
-    - contains all the code for the inference algorithm
+- contains all the code for the inference algorithm
 
 **networks/**
 
-    - contains the selected 
-    
-        real networks: lastfm, gnutella, fb, astroph, deezer
-        
-        random networks: gnp network and power-law network of size 1,000 and average degree of around 100. 
+- contains the selected 
+    real networks: lastfm, gnutella, fb, astroph, deezer
+    random networks: gnp network and power-law network of size 1,000 and average degree of around 100. 
 
 ## To Compile the code on Linux   
 
