@@ -1,10 +1,11 @@
 # Inference-ICML
 
 Directory structure:
-algo/
+
+**algo/**
     - contains all the code for the inference algorithm
 
-networks/
+**networks/**
     - contains the selected 
         real networks: lastfm, gnutella, fb, astroph, deezer
         random networks: gnp network and power-law network of size 1,000 and average degree of around 100. 
