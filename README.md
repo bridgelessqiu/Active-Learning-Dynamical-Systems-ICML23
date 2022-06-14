@@ -42,11 +42,11 @@ Directory structure:
 
 ### Example 1: run the binary-search based algorithm on lastfm network under theta = 0.9
 
-    `./inf_real 2 lastfm 0.9`
+`./inf_real 2 lastfm 0.9`
 
 ### Example 2: run the linear-search based algorithm on astroph network under theta = 0.1:
 
-    `./inf_real 1 astroph 0.1`
+`./inf_real 1 astroph 0.1`
 
 
 ## To run inference algorithms on synthetic networks 
